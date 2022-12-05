@@ -41,7 +41,7 @@ HAVING COUNT(instructor_person_id) > 0
 ORDER BY COUNT(lesson_id) DESC;
 
 
---ENSEMBLED_HELD_NEXT_WEEK
+--ENSEMBLES_HELD_NEXT_WEEK
 CREATE VIEW ensembles_held_next_week AS
 SELECT lesson_id, genre, to_char(time_start, 'DAY') as weekday, max_participants, booked_participants,
 CASE 
